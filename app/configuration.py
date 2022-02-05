@@ -1,4 +1,7 @@
-from logging.config import dictConfig
+import os
+from app.settings import PG_DB
+
+from settings import PG_HOST, PG_USER, PG_PASS
 
 
 class Config(object):
@@ -8,19 +11,20 @@ class Config(object):
 
     DEBUG = False
     TESTING = False
-    SQLALCHEMY_DATABASE_URI = "sqlite:///application.db"
+    SQLALCHEMY_DATABASE_URI = os.getenv(
+        "SQLALCHEMY_DATABASE_URI", "sqlite:///application.db"
+    )
     BOOTSTRAP_FONTAWESOME = True
-    SECRET_KEY = "MINHACHAVESECRETA"
+    SECRET_KEY = os.getenv("SECRET_KEY")
     CSRF_ENABLED = True
     SQLALCHEMY_TRACK_MODIFICATIONS = True
 
-    # Get your reCaptche key on: https://www.google.com/recaptcha/admin/create
-    # RECAPTCHA_PUBLIC_KEY = "6LffFNwSAAAAAFcWVy__EnOCsNZcG2fVHFjTBvRP"
-    # RECAPTCHA_PRIVATE_KEY = "6LffFNwSAAAAAO7UURCGI7qQ811SOSZlgU69rvv7"
-
 
 class ProductionConfig(Config):
-    SQLALCHEMY_DATABASE_URI = "mysql://user@localhost/foo"
+    SQLALCHEMY_DATABASE_URI = os.getenv(
+        "SQLALCHEMY_DATABASE_URI",
+        f"postgresql://${PG_USER}:{PG_PASS}@{PG_HOST}/{PG_DB}",
+    )
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
 

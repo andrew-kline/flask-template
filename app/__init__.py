@@ -3,12 +3,14 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_bootstrap import Bootstrap
 from flask_login import LoginManager
 
+from settings import ENVIRONMENT
+
 db = SQLAlchemy()
 
 
 def create_app():
     app = Flask(__name__)
-    app.config.from_object("app.configuration.DevelopmentConfig")
+    app.config.from_object(f"app.configuration.{ENVIRONMENT}Config")
 
     db.init_app(app)
     bs = Bootstrap(app)

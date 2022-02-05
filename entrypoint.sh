@@ -1,1 +1,3 @@
-gunicorn --bind 0.0.0.0:5000 'run:create_app()'
+#!/bin/bash
+
+gunicorn --bind 0.0.0.0:5000 --log-config log.conf 'run:create_app()'
