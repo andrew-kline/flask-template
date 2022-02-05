@@ -1,7 +1,5 @@
 import os
-from app.settings import PG_DB
-
-from settings import PG_HOST, PG_USER, PG_PASS
+from app.settings import PG_DB, PG_HOST, PG_USER, PG_PASS
 
 
 class Config(object):
