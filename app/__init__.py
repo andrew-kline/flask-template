@@ -2,6 +2,7 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_bootstrap import Bootstrap
 from flask_login import LoginManager
+import google.cloud.logging
 
 db = SQLAlchemy()
 
@@ -9,7 +10,8 @@ db = SQLAlchemy()
 def create_app():
     app = Flask(__name__)
     app.config.from_object("app.configuration.DevelopmentConfig")
-
+    client = google.cloud.logging.Client()
+    client.setup_logging()
     db.init_app(app)
     bs = Bootstrap(app)
     login_manager = LoginManager()

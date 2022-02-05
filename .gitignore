@@ -30,4 +30,4 @@ lib64
 *.env
 
 # logs
-*.log
+*.log*
