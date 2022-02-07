@@ -1,8 +1,28 @@
 services:
   web:
     build: .
+    depends_on:
+      - db
+    environment:
+      ENVIRONMENT: "${ENVIRONMENT}"
+      PG_USER: "${PG_USER}"
+      PG_PASS: "${PG_PASS}"
+      PG_HOST: "${PG_HOST}"
     ports:
       - "5001:5000"
     volumes:
       - .:/code
+    restart: always
     entrypoint: /code/entrypoint.sh
+
+  db:
+    image: postgres:latest
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: "${PG_USER}"
+      POSTGRES_PASSWORD: "${PG_PASS}"
+      POSTGRES_DB: "${PG_DB}"
+    restart: always
+    volumes:
+      - ${PG_STORAGE}:/var/lib/postgresql/data

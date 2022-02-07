@@ -4,6 +4,7 @@ __pycache__
 
 # dbs
 *.db
+postgres-data/
 
 # C extensions
 *.so
