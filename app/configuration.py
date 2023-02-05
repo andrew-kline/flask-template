@@ -9,8 +9,12 @@ class Config(object):
 
     DEBUG = False
     TESTING = False
+    # SQLALCHEMY_DATABASE_URI = os.getenv(
+    #     "SQLALCHEMY_DATABASE_URI", "sqlite:///application.db"
+    # )
     SQLALCHEMY_DATABASE_URI = os.getenv(
-        "SQLALCHEMY_DATABASE_URI", "sqlite:///application.db"
+        "SQLALCHEMY_DATABASE_URI",
+        f"postgresql://{PG_USER}:{PG_PASS}@{PG_HOST}/{PG_DB}",
     )
     BOOTSTRAP_FONTAWESOME = True
     SECRET_KEY = os.getenv("SECRET_KEY")
@@ -21,7 +25,7 @@ class Config(object):
 class ProductionConfig(Config):
     SQLALCHEMY_DATABASE_URI = os.getenv(
         "SQLALCHEMY_DATABASE_URI",
-        f"postgresql://${PG_USER}:{PG_PASS}@{PG_HOST}/{PG_DB}",
+        f"postgresql://{PG_USER}:{PG_PASS}@{PG_HOST}/{PG_DB}",
     )
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 

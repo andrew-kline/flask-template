@@ -2,11 +2,11 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_bootstrap import Bootstrap
 from flask_login import LoginManager
+from flask_migrate import Migrate
 
 from app.settings import ENVIRONMENT
 
 db = SQLAlchemy()
-
 
 def create_app():
     app = Flask(__name__)
@@ -35,3 +35,7 @@ def create_app():
     app.register_blueprint(main_blueprint)
 
     return app
+
+app = create_app()
+
+migrate = Migrate(app, db)
