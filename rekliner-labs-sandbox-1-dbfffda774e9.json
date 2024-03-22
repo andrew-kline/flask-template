@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "rekliner-labs-sandbox-1",
+  "private_key_id": "dbfffda774e9187d669b4dbddaf74621bcb8bcd4",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDK3xusPLagjN62\nJw/HQju9x0dMozzzw+z0hqP9Qa/WJ/n87iii+Ck7yRlLU4SEZ2DZdM43ToJBk8fU\nv7S6mDnmeJsa3JWyTOAbEPp52j6gGMiEQ66Lao4nPbyfZF41ulbHnLEP9km4kzsR\nPs60RtxkVthmoozoBGxZ+m3z/Gb/pBU1Zj/NANu5CPRTExLUkTUe509Atb/4TGNv\n8DNz2m03uZJ2I6Va0HYMecW91FVcJT9EDeayg+B042TRLIDGjnCfdbRDQUr4s9/H\nlQvZcsGYlGmSOfEKrFtRBQtG5aVWBgvvx4jV8Jzm02M6Z2A8X7HRNhm5BfvDKHT0\nOelXbOCrAgMBAAECggEABaeuyvV4S8URfOIIMmWPamyweUZARTVBbiwwobcf3Sgz\nyOVPSa0BjT0/phYNEW8bnS7V2WcoAgb0tjf6eYxpFMUTjG34rZsvULcqRupFU6DN\nOhlJjMZVcb+VT0YfdX+dD/xiAnq64a5s95VDcsqviwvRWsRjiXYnb7dSMvpmrpqK\nBrUZL32tyRN+NiUKhSkcUNAnkxA1tJ+ZNfZ8ApVj6SWYL/wdp/mQHw0yj8cdi942\nCpNkUOZzcTe7XddYUYcwS75B24k7uhbXN41G1Z3V7Z8562N0dMKLDcRktA34GHXn\n44AbnDNlOfwrHmm6iq0wXshim7Hu8/gbfFkPyTKS0QKBgQD9WMf+g95DKB3XZSKa\ncTCDsLEhfGrBeiyotrhlmypxq7dxjMmJA3ROyaPfyiETSARr5dC3W/jp7sNC1Ujt\np7+ZUoOqjaW4E70eoCq0uD+MXMHEknwBZBOK7Q0SGnfTlObbKKb78GS1J69/kMsi\nKzAKE2PpK98Mkv0pAmURCDErMQKBgQDM/wDgiNg9a6CXhtYCOkbpcqFHlz87YWyR\np+hUOYKUizanr2k/qluyNeAQviUAN+VsAMeO6ii6dAYgUMG1zDjIdLxgS0HaCW+N\nmZn6bFWUvYqKSZwXpuyL3lvqcYmFdjJ05U2QeTkG04VcWj8Jb+JFlQekdCHqXgHw\nuWXXOODamwKBgB/3LLzLTKbyj9lWlGgiMfnbuG2+MgYZcTsUWu3PByryfKHiHqef\n/PPX80pQSZ4SLySiCZSpER4LFy3+lUYPLVieFajWWHuCWhFcKidFPBdsuLIhvW27\nf8++mzCWkFns5rfuSCtvqHVG/Zi93zN/eX879RY9h9YhUbnz6Gaevv1xAoGBAKdd\n71ZjA8Gp1LTCJootEGZa66hqqPqPQTfukbXqOl2TB62Cfni3WyQ17lldFRKHkG1M\neaGKNnR8c+AAbxdBxH6NKJup9frRR12hseCOgJTu52SeUq3Q4EIV6o+P4QqxBOMB\nsAErp86V9cT//YVz7paG5XV0R5h05jqm86nzS0nPAoGAEQBObTX2LbpnVSE5z2+s\nDd5/oylM4eqJzYAY2xudjV8hrrnKXDHe3AXsTQHGS8+oPoR7Dm5yOXBS7T4VECl1\n7jiKah+xN3XbtBTjMUTF0h+fx8KCI9SgGxFicoT/M7CL+Fcapl9C2F2Y8P6+J9oz\nSsS5HmtGwZ4AldifG5j+71w=\n-----END PRIVATE KEY-----\n",
+  "client_email": "random-testing@rekliner-labs-sandbox-1.iam.gserviceaccount.com",
+  "client_id": "115906488376749566627",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/random-testing%40rekliner-labs-sandbox-1.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
